@@ -1,0 +1,14 @@
+.About {
+    width: 100%;
+    height: fit-content;
+    
+    border: solid 1px red;
+
+    & h1 {
+        padding: 10px;
+    }
+
+    & .intro {
+        padding: 10px;
+    }
+}
