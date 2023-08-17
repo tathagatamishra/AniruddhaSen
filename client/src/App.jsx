@@ -1,7 +1,5 @@
-import gsap from "gsap";
-
 import "./App.scss";
-import About from "./Component/About/About";
+import About from "./Component/C1/About";
 
 function App() {
   return (
@@ -10,6 +8,7 @@ function App() {
         <About />
       </div>
     </div>
+    
   );
 }
 

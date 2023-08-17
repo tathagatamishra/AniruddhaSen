@@ -1,0 +1,42 @@
+.About {
+    width: 100%;
+    height: fit-content;
+    outline: none;
+    box-sizing: border-box;
+    border: solid 5px red;
+    border-bottom: none;
+
+    & h1 {
+        padding: 10px;
+        border: solid 2px rgb(72, 255, 0);
+    }
+
+    & .intro {
+        padding: 10px;
+
+        & .image {
+            background: black;
+            // border: 8px solid black;
+            width: 168px;
+            height: 168px;
+            border-radius: 49.9%;
+            margin: auto;
+            
+            & img {
+                width: 160px;
+                height: 160px;
+                margin: auto;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                
+                object-fit: cover;
+                border-radius: 49.9%;
+    
+                user-select: none;
+            }
+        }
+
+    }
+}

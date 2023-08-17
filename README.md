@@ -10,29 +10,29 @@ Ideas for my website
 •	Sections or Heads / try to make this section dynamic, so that I can add headings on my own.
 
 
-About Me/Bio: only text
+C1 : About Me/Bio: only text
 
-My Resume: need to upload in pdf format
+C2 : My Resume: need to upload in pdf format
 
-Skills: Text only
+C3 : Skills: Text only
 
-Research Interests: only text 
+C4 : Research Interests: only text 
 
-Publications: for each publication, separately there should be these headings- Title, Publication/Publisher, Publication Date, Publication URL, Description.
+C5 : Publications: for each publication, separately there should be these headings- Title, Publication/Publisher, Publication Date, Publication URL, Description.
 
-Projects: Detail ongoing or past research projects you have been involved in.
+C6 : Projects: Detail ongoing or past research projects you have been involved in.
 
-Conferences and Events: Name, Issuing organization, Issue date, Credential ID
+C7 : Conferences and Events: Name, Issuing organization, Issue date, Credential ID
 
-Awards and Achievements: Name, Issuing organization, Issue date, Credential ID
+C8 : Awards and Achievements: Name, Issuing organization, Issue date, Credential ID
 
-Research Blog: Write articles or blog posts discussing recent developments in your field or sharing insights from your research.
+C9 : Research Blog: Write articles or blog posts discussing recent developments in your field or sharing insights from your research.
 
-My Socials: Name of the social media, website link
+C10 : My Socials: Name of the social media, website link
 
-Contact: Provide contact information for those interested in reaching out to you or collaborating.
+C11 : Contact: Provide contact information for those interested in reaching out to you or collaborating.
 
-Resources: Different file formats / Offer downloadable resources, datasets, or tools related to your research.
+C12 : Resources: Different file formats / Offer downloadable resources, datasets, or tools related to your research.
 
 
 ===
