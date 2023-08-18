@@ -3,6 +3,12 @@
     box-sizing: border-box;
     
     cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur), auto !important;
+
+    &::selection {
+      color: #000000;
+      background: #ffff00;
+      text-shadow: none;
+  }
   }
   
   html,
@@ -11,6 +17,10 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     background: white;
+    // background-color: rgb(32, 28, 43);
+    background-image: radial-gradient(whitesmoke 1px, transparent 11%);
+    background-size: 10px 10px;
+    background-repeat: repeat;
   }
   
   body {

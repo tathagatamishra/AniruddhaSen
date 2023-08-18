@@ -1,7 +1,9 @@
 import React from "react";
 import "./About.scss";
 import profileImage from "./ani.jpg";
-import coverImage from "./nigogosyan.jpg";
+// import coverImage from "./nigogosyan.jpg";
+import coverImage from "./membrane.jpg";
+// import coverImage from "./rbc-fibrin.jpg";
 import defaultProfile from "./default-profile.png";
 
 export default function About() {
@@ -38,7 +40,7 @@ export default function About() {
               </div>
             </div>
 
-            <p className="bio-description">Specializes in the study of the chemical processes and molecular mechanisms that underlie the structure, function, and regulation of biological molecules within living organisms. These researchers investigate the interactions, transformations, and reactions of biomolecules such as proteins, nucleic acids, lipids, carbohydrates, and small molecules, with the goal of understanding the fundamental principles governing life at the molecular level.</p>
+            <p className="bio-description">Specialized in the study of the chemical processes and molecular mechanisms that underlie the structure, function, and regulation of biological molecules within living organisms. These researchers investigate the interactions, transformations, and reactions of biomolecules such as proteins, nucleic acids, lipids, carbohydrates, and small molecules, with the goal of understanding the fundamental principles governing life at the molecular level.</p>
           </div>
         </div>
       </div>

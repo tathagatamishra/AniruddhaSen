@@ -9,8 +9,12 @@ export default function Resume() {
       <div className="resume-card">
         <div className="cv-lt">
 
-          <div className="cv-text"></div>
-          <div className="cv-btn"></div>
+          <div className="cv-text">Get a copy of my resume . . .</div>
+          
+          <div className="cv-btn">
+            <button>View</button>
+            <button>Download</button>
+          </div>
 
         </div>
 
