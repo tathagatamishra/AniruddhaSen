@@ -1,42 +1,118 @@
 .About {
-    width: 100%;
+    width: 1150px;
     height: fit-content;
     outline: none;
     box-sizing: border-box;
-    border: solid 5px red;
-    border-bottom: none;
+    // border: solid 2px red;
+    // border-bottom: none;
 
-    & h1 {
-        padding: 10px;
-        border: solid 2px rgb(72, 255, 0);
-    }
+    
+    & .about-card {
+        padding: 0;
+        width: 1000px;
+        margin: 30px 20px 20px 0;
+        
+        float: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
 
-    & .intro {
-        padding: 10px;
-
-        & .image {
-            background: black;
-            // border: 8px solid black;
-            width: 168px;
-            height: 168px;
-            border-radius: 49.9%;
-            margin: auto;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.265);
+        border-radius: 0.8rem;
+        // border: 2px solid rgb(249, 153, 0);
+        
+        & .cover-image {
+            height: 201px;
+            border-top-right-radius: 0.8rem;
+            border-top-left-radius: 0.8rem;
+            // border: 1px solid rgb(0, 33, 249);
             
             & img {
-                width: 160px;
-                height: 160px;
-                margin: auto;
-                position: relative;
-                top: 50%;
-                left: 50%;
+                height: 201px;
+                width: 1000px;
+                object-fit: cover;
+                border-top-right-radius: 0.8rem;
+                border-top-left-radius: 0.8rem;
+            }
+        }
+        
+        & .profile-image {
+            width: 160px;
+            height: 160px;
+            // margin: auto;
+            
+            float: left;
+            z-index: 1;
+            position: absolute;
+            // top: 50%;
+            // left: 10px;
+            // transform: translate(0%, -50%);
+            
+            // background: black;
+            // border-radius: 49.9%;
+            // border: 1px solid black;
+
+            & .bg-image {
+                width: 175px;
+                height: 175px;
+                margin: 0;
+                
+                z-index: 0;
+                position: absolute;
+                top: 20%;
+                left: 0%;
                 transform: translate(-50%, -50%);
                 
                 object-fit: cover;
                 border-radius: 49.9%;
-    
+                background-color: white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+                
+                user-select: none;
+
+                & .default-image {
+                    width: 160px;
+                    height: 160px;
+                    margin: 0;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            
+            & .user-image {
+                width: 160px;
+                height: 160px;
+                margin: 0;
+                
+                z-index: 1;
+                position: absolute;
+                top: 20%;
+                left: 0%;
+                transform: translate(-50%, -50%);
+                
+                object-fit: cover;
+                border-radius: 49.9%;
+                
                 user-select: none;
             }
         }
-
+        
+        & .bio {
+            height: 201px;
+            
+            border-bottom-left-radius: 0.8rem;
+            border-bottom-right-radius: 0.8rem;
+            border: 1px solid rgb(224, 0, 249);
+            
+            & .bio-holder {
+                
+                position: absolute;
+            }
+        }
     }
 }
