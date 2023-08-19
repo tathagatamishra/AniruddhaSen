@@ -3,6 +3,15 @@ import "./Resume.scss";
 import cvImage from "./cv-image.png";
 
 export default function Resume() {
+
+  function handleDownload() {
+    const link = document.createElement("a");
+    link.href = './DEMO.pdf';
+    link.target = "_blank"; // Open the link in a new tab
+    link.rel = "noopener noreferrer";
+    link.click();
+  }
+
   return (
     <div className="Resume">
 
@@ -13,7 +22,7 @@ export default function Resume() {
           
           <div className="cv-btn">
             <button>View</button>
-            <button>Download</button>
+            <button onClick={handleDownload}>Download</button>
           </div>
 
         </div>

@@ -11,10 +11,15 @@ import Project from "./Component/C6/Project";
 import Conference from "./Component/C7/Conference";
 import Achievement from "./Component/C8/Achievement";
 import Blog from "./Component/C9/Blog";
+import Footer from "./Component/Footer/Footer";
+import Header from "./Component/Header/Header";
 
 function App() {
   return (
     <div className="App">
+
+      <Header />
+
       <div className="webBody">
         <About />
         <Resume />
@@ -29,6 +34,9 @@ function App() {
         <Contact />
         <Resource />
       </div>
+
+      <Footer />
+
     </div>
     
   );
