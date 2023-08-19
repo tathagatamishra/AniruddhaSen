@@ -1,17 +1,17 @@
-.Skill {
+.Resource {
     width: 1150px;
     height: fit-content;
     outline: none;
     box-sizing: border-box;
     // border: solid 2px red;
 
-    & .skill-card {
+    & .resource-card {
         padding: 0;
         width: 1000px;
         height: 300px;
-        margin: 35px 20px 20px 0;
+        margin: 35px 0 20px 20px;
         
-        float: right;
+        float: left;
         background-color: white;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.265);
         border-radius: 0.8rem;
