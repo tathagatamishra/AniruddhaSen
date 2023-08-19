@@ -6,7 +6,15 @@ export default function Resume() {
 
   function handleDownload() {
     const link = document.createElement("a");
-    link.href = './DEMO.pdf';
+    link.href = 'https://raw.githubusercontent.com/tathagatamishra/AniruddhaSen/9d983eac1c4aa13443049fa0076e3c89359de544/client/src/Component/C2/DEMO.pdf';
+    link.target = "_blank"; // Open the link in a new tab
+    link.rel = "noopener noreferrer";
+    link.click();
+  }
+
+  function handleView() {
+    const link = document.createElement("a");
+    link.href = 'https://drive.google.com/file/d/1exZOsuXLdEyrwVwZ2I0mhjA-k7BwvSw8/view?usp=sharing';
     link.target = "_blank"; // Open the link in a new tab
     link.rel = "noopener noreferrer";
     link.click();
@@ -21,7 +29,7 @@ export default function Resume() {
           <div className="cv-text"><div className="dot"></div>Get a copy of my resume</div>
           
           <div className="cv-btn">
-            <button>View</button>
+            <button onClick={handleView}>View</button>
             <button onClick={handleDownload}>Download</button>
           </div>
 
