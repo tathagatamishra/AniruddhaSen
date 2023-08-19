@@ -119,8 +119,11 @@
             // border: 2px solid rgb(62, 249, 0);
             user-select: none;
             z-index: 0;
+            // margin: auto;
+            overflow: hidden;
 
             & .cover-shadow {
+                z-index: 1;
                 height: 200px;
                 width: 1000px;
                 position: absolute;
@@ -128,11 +131,24 @@
             }
 
             & img {
+                z-index: 0;
                 height: 200px;
-                width: 1000px;
+                // height: auto;
+                transform: scale(1);
+                width: 100%;
+                transition: 500ms;
+                display: block;
                 object-fit: cover;
                 border-top-right-radius: 0.8rem;
                 border-top-left-radius: 0.8rem;
+            }
+
+            &:hover {
+                & img {
+                    height: 200px;
+                    width: 1000px;
+                    transform: scale(1.1);
+                }
             }
         }
 
@@ -148,7 +164,7 @@
             background: linear-gradient(0deg, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%);
             border-bottom-left-radius: 0.8rem;
             border-bottom-right-radius: 0.8rem;
-            // border: 1px solid rgb(224, 0, 249);
+            // border: 2px solid rgb(50, 249, 0);
             
             & .bio-holder {
                 height: 250px;

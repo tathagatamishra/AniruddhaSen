@@ -14,7 +14,7 @@ export default function About() {
 
         <div className="profile-image">
 
-          <img className="user-image" src={profileImage} />
+          {/* <img className="user-image" src={profileImage} /> */}
 
           <div className="bg-image">
             <img className="default-image" src={defaultProfile} />
