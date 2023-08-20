@@ -183,8 +183,8 @@
         justify-content: space-between;
         align-items: center;
 
-        outline: solid 2px black;
-        background-color: #21262d;
+        outline: $---card-dark-outline;
+        background-color: $---card-dark-bg;
         box-shadow: $---card-dark-shadow;
         border-radius: 0.8rem;
         // border: 2px solid rgb(249, 153, 0);
@@ -293,8 +293,9 @@
             
             border-radius: 10px;
             object-fit: cover;
-            background-color: rgb(30, 30, 30);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.600);
+            background-color: $---image-border-color;
+            box-shadow: $---card-dark-shadow;
+            outline: 1px solid black;
             // border: 1px solid rgb(0, 50, 249);
             transition: 300ms;
             

@@ -264,3 +264,266 @@
         }
     }
 }
+
+.dark-about {
+    width: 1150px;
+    height: fit-content;
+    outline: none;
+    box-sizing: border-box;
+    color: $---text-dark-color;
+    
+    @media screen and (max-width: 1150px) {
+        width: 1050px;
+    }
+    
+    & .about-card {
+        @media screen and (max-width: 1150px) {
+            padding: 0;
+            width: 900px;
+            height: 420px;
+            margin: 30px 20px 20px 0;
+        }
+
+        padding: 0;
+        width: 1000px;
+        height: 420px;
+        margin: 30px 20px 20px 0;
+        
+        float: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+
+        outline: $---card-dark-outline;
+        background-color: $---card-dark-bg;
+        box-shadow: $---card-dark-shadow;
+        border-radius: 0.8rem;
+        border-top-right-radius: 0.8rem;
+        border-top-left-radius: 0.8rem;
+        // border: 2px solid rgb(249, 153, 0);
+                
+        & .profile-image {
+            width: 160px;
+            height: 160px;
+            
+            float: left;
+            z-index: 2;
+            position: absolute;
+
+            // border: 1px solid black;
+
+            & .bg-image {
+                width: 175px;
+                height: 175px;
+                margin: 0;
+                
+                z-index: 0;
+                position: absolute;
+                top: 100%;
+                left: 0%;
+                transform: translate(-50%, -50%);
+                
+                object-fit: cover;
+                border-radius: 49.9%;
+                background-color: $---image-border-color;
+                box-shadow: $---card-dark-shadow;
+                outline: 1px solid black;
+                
+                user-select: none;
+                transition: 300ms;
+
+                & .default-image {
+                    width: 160px;
+                    height: 160px;
+                    margin: 0;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: 300ms;
+                }
+            }
+            
+            & .user-image {
+                width: 160px;
+                height: 160px;
+                margin: 0;
+                
+                z-index: 1;
+                position: absolute;
+                top: 100%;
+                left: 0%;
+                transform: translate(-50%, -50%);
+                
+                object-fit: cover;
+                border-radius: 49.9%;
+                
+                user-select: none;
+                transition: 300ms;
+                outline: 2px solid $---image-border-color;
+            }
+            
+            &:hover {
+                & .bg-image {
+                    width: 195px;
+                    height: 195px;
+
+                    & .default-image {
+                        width: 180px;
+                        height: 180px;
+                    }
+                }
+
+                & .user-image {
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+        }
+
+        & .cover-image {
+            z-index: 0;
+            height: 200px;
+            overflow: hidden;
+            user-select: none;
+
+            border-top-right-radius: 0.8rem;
+            border-top-left-radius: 0.8rem;
+            // border: 2px solid rgb(0, 0, 0);
+
+            & .cover-shadow {
+                @media screen and (max-width: 1150px) {
+                    width: 900px;
+                    height: 200px;
+                }
+
+                z-index: 1;
+                height: 210px;
+                width: 1000px;
+                position: absolute;
+                box-shadow: 0px -100px 50px -40px $---card-dark-bg inset;
+                border-top-right-radius: 0.8rem;
+                border-top-left-radius: 0.8rem;
+                // border: 2px solid rgb(255, 71, 71);
+            }
+            
+            & img {
+                z-index: 0;
+                height: 200px;
+                transform: scale(1);
+                width: 100%;
+                transition: 500ms;
+                
+                display: block;
+                object-fit: cover;
+                border-top-right-radius: 0.8rem;
+                border-top-left-radius: 0.8rem;
+            }
+
+            &:hover {
+                & img {
+                    height: 200px;
+                    width: 1000px;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        & .bio {
+            @media screen and (max-width: 1150px) {
+                height: 270px;
+                width: 900px;
+                margin-top: 150px;
+            }
+            height: 270px;
+            width: 1000px;
+            margin-top: 150px;
+
+            z-index: 1;
+            position: absolute;
+            
+            background: linear-gradient(0deg, $---card-dark-bg 70%, transparent 100%);
+            border-bottom-left-radius: 0.8rem;
+            border-bottom-right-radius: 0.8rem;
+            // border: 2px solid rgb(50, 249, 0);
+            
+            & .bio-holder {
+                height: 250px;
+                padding: 0;
+                // border: 1px solid rgb(41, 249, 0);
+                
+                & .bio-name {
+                    margin: 0 0 0 110px;
+                    
+                    font-size: 50px;
+                    line-height: 1;
+                    font-family: 'Jost', sans-serif;
+                    text-shadow: 0 0 10px $---card-dark-bg;
+                    
+                    // border: 1px solid rgb(249, 158, 0);
+                }
+                
+                & .bio-info {
+                    margin-top: 10px;
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    // border: 1px solid rgb(249, 158, 0);
+                    
+                    & .bio-topics {
+                        margin: 0 0 0 110px;
+                        
+                        font-size: 18px;
+                        font-weight: 600;
+                        word-spacing: 2px;
+                        font-family: 'Karla', sans-serif;
+                        
+                        // border: 1px solid rgb(249, 0, 0);
+                    }
+                    
+                    & .bio-tags {
+                        margin-right: 40px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        align-items: center;
+                        
+                        // border: 1px solid rgb(33, 249, 0);
+                        
+                        & .tag {
+                            margin: 0 10px 0 10px;
+                            padding: 4px 6px 4px 6px;
+
+                            // line-height: 0;
+                            color: rgb(173, 175, 193);
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 14px;
+
+                            border-radius: 5px;
+                            border: 1px solid $---button-dark-border-color;
+                            background-color: $---button-dark-bg;
+                            box-shadow: 2px 2px 2px $---dark-shadow-color;
+                        }
+                    }
+                }
+                
+                & .bio-description {
+                    margin: 30px 50px 0 50px;
+                    
+                    font-size: 18px;
+                    text-indent: 50px;
+                    word-spacing: 2px;
+                    text-align: justify;
+                    font-family: 'Karla', sans-serif;
+                    
+                    // border: 1px solid rgb(228, 0, 249);
+                }
+            }
+        }
+    }
+}

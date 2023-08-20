@@ -32,6 +32,7 @@
     width: 1150px;
     height: fit-content;
     outline: none;
+    color: $---text-dark-color;
     box-sizing: border-box;
     // border: solid 2px red;
 
@@ -46,9 +47,10 @@
         margin: 35px 20px 20px 0;
 
         float: right;
-        background-color: black;
+        background-color: $---card-dark-bg;
         box-shadow: $---card-shadow;
         border-radius: 0.8rem;
+        outline: $---card-dark-outline;
 
         @media screen and (max-width: 1150px) {
             width: 900px;

@@ -6,15 +6,20 @@ import coverImage from "./membrane.jpg";
 // import coverImage from "./rbc-fibrin.jpg";
 import defaultProfile from "./default-profile.png";
 
+import { useDarkMode } from '../../assets/DarkModeContext';
+
 export default function About() {
+
+  const { isDarkMode } = useDarkMode();
+
   return (
-    <div className="About">
+    <div className={isDarkMode ? 'dark-about' : 'About'}>
 
       <div className="about-card">
 
         <div className="profile-image">
 
-          {/* <img className="user-image" src={profileImage} /> */}
+          <img className="user-image" src={profileImage} />
 
           <div className="bg-image">
             <img className="default-image" src={defaultProfile} />
