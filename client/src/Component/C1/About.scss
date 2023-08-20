@@ -9,9 +9,19 @@
     box-sizing: border-box;
     // border: solid 2px red;
     // border-bottom: none;
-
+    
+    @media screen and (max-width: 1150px) {
+        width: 1050px;
+    }
     
     & .about-card {
+        @media screen and (max-width: 1150px) {
+            padding: 0;
+            width: 900px;
+            height: 420px;
+            margin: 30px 20px 20px 0;
+        }
+
         padding: 0;
         width: 1000px;
         height: 420px;
@@ -26,22 +36,18 @@
         background-color: white;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.265);
         border-radius: 0.8rem;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
         // border: 2px solid rgb(249, 153, 0);
                 
         & .profile-image {
             width: 160px;
             height: 160px;
-            // margin: auto;
             
             float: left;
             z-index: 2;
             position: absolute;
-            // top: 50%;
-            // left: 10px;
-            // transform: translate(0%, -50%);
-            
-            // background: black;
-            // border-radius: 49.9%;
+
             // border: 1px solid black;
 
             & .bg-image {
@@ -113,30 +119,38 @@
         }
 
         & .cover-image {
+            z-index: 0;
             height: 200px;
+            overflow: hidden;
+            user-select: none;
+
             border-top-right-radius: 0.8rem;
             border-top-left-radius: 0.8rem;
-            // border: 2px solid rgb(62, 249, 0);
-            user-select: none;
-            z-index: 0;
-            // margin: auto;
-            overflow: hidden;
+            // border: 2px solid rgb(0, 0, 0);
 
             & .cover-shadow {
+                @media screen and (max-width: 1150px) {
+                    width: 900px;
+                    height: 200px;
+                }
+
                 z-index: 1;
-                height: 200px;
+                height: 210px;
                 width: 1000px;
                 position: absolute;
-                box-shadow: 0px -80px 30px -50px white inset;
+                box-shadow: 0px -100px 50px -40px white inset;
+                border-top-right-radius: 0.8rem;
+                border-top-left-radius: 0.8rem;
+                // border: 2px solid rgb(255, 71, 71);
             }
-
+            
             & img {
                 z-index: 0;
                 height: 200px;
-                // height: auto;
                 transform: scale(1);
                 width: 100%;
                 transition: 500ms;
+                
                 display: block;
                 object-fit: cover;
                 border-top-right-radius: 0.8rem;
@@ -153,6 +167,11 @@
         }
 
         & .bio {
+            @media screen and (max-width: 1150px) {
+                height: 270px;
+                width: 900px;
+                margin-top: 150px;
+            }
             height: 270px;
             width: 1000px;
             margin-top: 150px;
@@ -160,8 +179,7 @@
             z-index: 1;
             position: absolute;
             
-            // background-color: white;
-            background: linear-gradient(0deg, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%);
+            background: linear-gradient(0deg, white 70%, transparent 100%);
             border-bottom-left-radius: 0.8rem;
             border-bottom-right-radius: 0.8rem;
             // border: 2px solid rgb(50, 249, 0);

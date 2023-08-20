@@ -1,7 +1,8 @@
 import React from 'react'
+import './Footer.scss'
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <div className='Footer'>© 2023 Aniruddha Sen</div>
   )
 }
