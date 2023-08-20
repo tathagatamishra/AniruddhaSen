@@ -1,10 +1,12 @@
 import React from "react";
 import "./About.scss";
+
 import profileImage from "./ani.jpg";
-// import coverImage from "./nigogosyan.jpg";
-import coverImage from "./membrane.jpg";
-// import coverImage from "./rbc-fibrin.jpg";
 import defaultProfile from "./default-profile.png";
+
+// import coverImage from "./nigogosyan.jpg";
+// import coverImage from "./membrane.jpg";
+import coverImage from "./rbc-fibrin.jpg";
 
 import { useDarkMode } from '../../assets/DarkModeContext';
 

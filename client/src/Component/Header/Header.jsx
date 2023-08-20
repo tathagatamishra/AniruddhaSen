@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
 
-    <div className="Header">
+    <div className={isDarkMode ? 'dark-header' : 'Header'}>
 
       <div className="toggle" onClick={toggleDarkMode}>
         <input type="checkbox" />
