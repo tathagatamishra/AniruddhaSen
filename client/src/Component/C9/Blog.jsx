@@ -1,9 +1,13 @@
 import React from 'react'
 import './Blog.scss'
 
-export default function Blog() {
+import { useDarkMode } from "../../assets/DarkModeContext";
+
+export default function Blog() {  
+  const { isDarkMode } = useDarkMode();
+
   return (
-    <div className='Blog'>
+    <div className={isDarkMode ? "dark-blog" : "Blog"}>
         <div className='blog-card'>Blog</div>
     </div>
   )

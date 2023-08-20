@@ -27,3 +27,33 @@
         }
     }
 }
+
+.dark-publication {
+    width: 1150px;
+    height: fit-content;
+    outline: none;
+    box-sizing: border-box;
+    color: rgb(236,236,241);
+    // border: solid 2px red;
+
+    @media screen and (max-width: 1150px) {
+        width: 1050px;
+    }
+
+    & .publication-card {
+        padding: 0;
+        width: 1000px;
+        height: 300px;
+        margin: 35px 20px 20px 0;
+        
+        float: right;
+        background-color: $---card-dark-bg;
+        box-shadow: $---card-shadow;
+        border-radius: 0.8rem;
+        outline: $---card-dark-outline;
+    
+        @media screen and (max-width: 1150px) {
+            width: 900px;
+        }
+    }
+}
