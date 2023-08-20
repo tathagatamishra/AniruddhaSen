@@ -8,7 +8,7 @@
       color: #000000;
       background: #ffff00;
       text-shadow: none;
-  }
+    }
   }
   
   // html,
@@ -40,6 +40,19 @@
   }
 
   .dark-mode {
+
+    height: fit-content;
+    margin: 0px;
+
+    overflow-x: hidden;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+
+    background: #484f58;
+    background-image: radial-gradient(#3f454d 2px, transparent 0%);
+    background-size: 15px 15px;
+    background-repeat: repeat;
+
     &::-webkit-scrollbar {
       width: 6px;
       height: 5px;

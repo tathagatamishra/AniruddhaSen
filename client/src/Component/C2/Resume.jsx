@@ -2,7 +2,11 @@ import React from "react";
 import "./Resume.scss";
 import cvImage from "./cv-image.png";
 
+import { useDarkMode } from '../../assets/DarkModeContext';
+
 export default function Resume() {
+
+  const { isDarkMode } = useDarkMode();
 
   function handleDownload() {
     const link = document.createElement("a");
@@ -21,7 +25,7 @@ export default function Resume() {
   }
 
   return (
-    <div className="Resume">
+    <div className={isDarkMode ? 'dark-resume' : 'Resume'}>
 
       <div className="resume-card">
         <div className="cv-lt">

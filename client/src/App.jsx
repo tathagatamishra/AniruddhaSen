@@ -1,4 +1,5 @@
 import "./App.scss";
+
 import About from "./Component/C1/About";
 import Social from "./Component/C10/Social";
 import Contact from "./Component/C11/Contact";
@@ -14,31 +15,35 @@ import Blog from "./Component/C9/Blog";
 import Footer from "./Component/Footer/Footer";
 import Header from "./Component/Header/Header";
 
+import { DarkModeProvider } from './assets/DarkModeContext';
+
+
 function App() {
   return (
-    <div className="App">
+    <DarkModeProvider>
+      <div className="App">
 
-      <Header />
+        <Header />
 
-      <div className="webBody">
-        <About />
-        <Resume />
-        <Skill />
-        <Interest />
-        <Publication />
-        <Project />
-        <Conference />
-        <Achievement />
-        <Blog />
-        <Social />
-        <Contact />
-        <Resource />
+        <div className="webBody">
+          <About />
+          <Resume />
+          <Skill />
+          <Interest />
+          <Publication />
+          <Project />
+          <Conference />
+          <Achievement />
+          <Blog />
+          <Social />
+          <Contact />
+          <Resource />
+        </div>
+
+        <Footer />
+
       </div>
-
-      <Footer />
-
-    </div>
-    
+    </DarkModeProvider>
   );
 }
 

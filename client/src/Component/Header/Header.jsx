@@ -1,39 +1,20 @@
-import React, { useState } from "react";
 import "./Header.scss";
 
+import { useDarkMode } from '../../assets/DarkModeContext';
+
 export default function Header() {
-    
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  function changeMode() {
+  // function changeMode() {
+  //   document.body.classList.toggle("dark-mode");
+  // }
 
-    const bodyStyle = document.body.style;
-
-    if (isDarkMode) {
-      // Revert to the original body styles if turning off dark mode
-      bodyStyle.background = "whitesmoke";
-      bodyStyle.backgroundImage = "radial-gradient(white 2px, transparent 0%)";
-      bodyStyle.backgroundSize = "15px 15px";
-      bodyStyle.backgroundRepeat = "repeat";
-    } 
-    else {
-        // Apply dark mode styles
-        bodyStyle.background = "#484f58";
-        bodyStyle.backgroundImage = "radial-gradient(#3f454d 2px, transparent 0%)";
-        bodyStyle.backgroundSize = "15px 15px";
-        bodyStyle.backgroundRepeat = "repeat";
-    }
-    
-    // Toggle the dark mode state
-    setIsDarkMode(!isDarkMode);
-
-    // Toggle the dark mode class on the body element
-    document.body.classList.toggle("dark-mode");
-  }
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
+
     <div className="Header">
-      <div className="toggle" onClick={changeMode}>
+
+      <div className="toggle" onClick={toggleDarkMode}>
         <input type="checkbox" />
         <span className="button"></span>
         <span className="label">☼</span>
@@ -41,5 +22,6 @@ export default function Header() {
 
       <div className="empty"></div>
     </div>
+
   );
 }

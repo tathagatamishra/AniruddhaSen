@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import '../../assets/variables';
 
 
 .About {
@@ -34,7 +35,7 @@
         align-items: stretch;
 
         background-color: white;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.265);
+        box-shadow: $---card-shadow;
         border-radius: 0.8rem;
         border-top-right-radius: 1rem;
         border-top-left-radius: 1rem;

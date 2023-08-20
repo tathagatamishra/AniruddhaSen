@@ -1,3 +1,5 @@
+@import '../../assets/variables';
+
 .Resource {
     width: 1150px;
     height: fit-content;
@@ -17,7 +19,7 @@
         
         float: left;
         background-color: white;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.265);
+        box-shadow: $---card-shadow;
         border-radius: 0.8rem;
 
         @media screen and (max-width: 1150px) {
