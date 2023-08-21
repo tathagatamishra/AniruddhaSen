@@ -26,7 +26,7 @@
     }
 
     @media screen and (max-width: 500px) {
-        width: 1050px;
+        width: 495px;
     }
 
     @media screen and (max-width: 400px) {
@@ -49,6 +49,12 @@
             width: 800px;
             height: 430px;
             margin: 30px 20px 20px 0;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 0;
+            width: 470px;
+            height: 600px;
+            margin: 20px 10px 20px 10px;
         }
 
         transition: 300ms;
@@ -158,6 +164,7 @@
 
             border-top-right-radius: 0.8rem;
             border-top-left-radius: 0.8rem;
+
             // border: 2px solid rgb(0, 0, 0);
 
             & .cover-shadow {
@@ -167,6 +174,10 @@
                 }
                 @media screen and (max-width: 1030px) {
                     width: 800px;
+                    height: 200px;
+                }
+                @media screen and (max-width: 500px) {
+                    width: 470px;
                     height: 200px;
                 }
 
@@ -179,7 +190,8 @@
                 box-shadow: 0px -100px 50px -40px white inset;
                 border-top-right-radius: 0.8rem;
                 border-top-left-radius: 0.8rem;
-                // border: 2px solid rgb(255, 71, 71);
+                
+                // border: 2px solid rgb(71, 145, 255);
             }
             
             & img {
@@ -213,6 +225,11 @@
             @media screen and (max-width: 1030px) {
                 height: 270px;
                 width: 800px;
+                margin-top: 150px;
+            }
+            @media screen and (max-width: 500px) {
+                height: 450px;
+                width: 470px;
                 margin-top: 150px;
             }
 
