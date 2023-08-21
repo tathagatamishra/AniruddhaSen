@@ -1,4 +1,6 @@
 import "./Header.scss";
+import { IonIcon } from "@ionic/react";
+import { sunny } from "ionicons/icons";
 
 import { useDarkMode } from "../../assets/DarkModeContext";
 
@@ -15,7 +17,7 @@ export default function Header() {
         <div className="toggle" onClick={toggleDarkMode}>
           <input type="checkbox" />
           <span className="button"></span>
-          <span className="label">☼</span>
+          <IonIcon icon={sunny} className="label" />
         </div>
       </div>
     </div>
