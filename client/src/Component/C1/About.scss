@@ -8,7 +8,7 @@
     height: fit-content;
     outline: none;
     box-sizing: border-box;
-    // border: solid 2px red;
+    border: solid 2px red;
 
     transition: 300ms;
     
@@ -76,7 +76,7 @@
         border-top-right-radius: 1rem;
         border-top-left-radius: 1rem;
 
-        // outline: 2px solid rgb(249, 153, 0);
+        outline: 2px solid rgb(249, 153, 0);
                 
         & .profile-image {
             width: 160px;
@@ -86,9 +86,17 @@
             z-index: 2;
             position: absolute;
 
-            // border: 1px solid black;
+            border: 1px solid black;
 
             & .bg-image {
+                @media screen and (max-width: 500px) {
+                    width: 165px;
+                    height: 165px;
+                    top: 100%;
+                    left: 0%;
+                    transform: translate(8%, -50%);
+                }
+
                 width: 175px;
                 height: 175px;
                 margin: 0;
@@ -108,6 +116,11 @@
                 transition: 300ms;
 
                 & .default-image {
+                    @media screen and (max-width: 500px) {
+                        width: 150px;
+                        height: 150px;
+                    }
+
                     width: 160px;
                     height: 160px;
                     margin: 0;
@@ -121,6 +134,14 @@
             }
             
             & .user-image {
+                @media screen and (max-width: 500px) {
+                    width: 150px;
+                    height: 150px;
+                    top: 100%;
+                    left: 0%;
+                    transform: translate(14%, -50%);
+                }
+
                 width: 160px;
                 height: 160px;
                 margin: 0;
@@ -140,18 +161,24 @@
             
             &:hover {
                 & .bg-image {
-                    width: 195px;
-                    height: 195px;
+                    @media screen and (min-width: 600px) {
+                        width: 195px;
+                        height: 195px;
+                    }
 
                     & .default-image {
-                        width: 180px;
-                        height: 180px;
+                        @media screen and (min-width: 600px) {
+                            width: 180px;
+                            height: 180px;
+                        }
                     }
                 }
 
                 & .user-image {
-                    width: 180px;
-                    height: 180px;
+                    @media screen and (min-width: 600px) {
+                        width: 180px;
+                        height: 180px;
+                    }
                 }
             }
         }
@@ -165,7 +192,7 @@
             border-top-right-radius: 0.8rem;
             border-top-left-radius: 0.8rem;
 
-            // border: 2px solid rgb(0, 0, 0);
+            border: 2px solid rgb(0, 0, 0);
 
             & .cover-shadow {
                 @media screen and (max-width: 1150px) {
@@ -191,7 +218,7 @@
                 border-top-right-radius: 0.8rem;
                 border-top-left-radius: 0.8rem;
                 
-                // border: 2px solid rgb(71, 145, 255);
+                border: 2px solid rgb(71, 145, 255);
             }
             
             & img {
@@ -209,9 +236,9 @@
 
             &:hover {
                 & img {
-                    height: 200px;
-                    width: 1000px;
-                    transform: scale(1.1);
+                    @media screen and (min-width: 600px) {
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
@@ -246,14 +273,20 @@
             border-bottom-left-radius: 0.8rem;
             border-bottom-right-radius: 0.8rem;
 
-            // border: 2px solid rgb(50, 249, 0);
+            border: 2px solid rgb(50, 249, 0);
             
             & .bio-holder {
                 height: fit-content;
                 padding: 0;
-                // border: 1px solid rgb(41, 249, 0);
+                border: 1px solid rgb(199, 0, 249);
                 
                 & .bio-name {
+                    @media screen and (max-width: 500px) {
+                        font-size: 40px;
+                        text-align: right;
+                        padding-right: 10px;
+                    }
+
                     margin: 0 0 0 110px;
                     
                     font-size: 50px;
@@ -261,7 +294,7 @@
                     font-family: 'Jost', sans-serif;
                     text-shadow: 0 0 10px white;
                     
-                    // border: 1px solid rgb(249, 158, 0);
+                    border: 2px solid rgb(249, 158, 0);
                 }
                 
                 & .bio-info {
@@ -272,9 +305,20 @@
                     justify-content: space-between;
                     align-items: center;
 
-                    // border: 1px solid rgb(249, 158, 0);
+                    border: 1px solid rgb(0, 157, 255);
                     
+                    @media screen and (max-width: 600px) {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                    }
+
                     & .bio-topics {
+                        @media screen and (max-width: 600px) {
+                            margin: 5px 10px;
+                        }
+
                         margin: 0 0 0 110px;
                         
                         font-size: 18px;
@@ -282,17 +326,21 @@
                         word-spacing: 2px;
                         font-family: 'Karla', sans-serif;
                         
-                        // border: 1px solid rgb(249, 0, 0);
+                        border: 1px solid rgb(249, 0, 0);
                     }
                     
                     & .bio-tags {
+                        @media screen and (max-width: 600px) {
+                            margin: 10px;
+                        }
+
                         margin-right: 40px;
                         display: flex;
                         flex-direction: row;
                         justify-content: flex-end;
                         align-items: center;
                         
-                        // border: 1px solid rgb(33, 249, 0);
+                        border: 1px solid rgb(0, 0, 0);
                         
                         & .tag {
                             margin: 0 10px 0 10px;
@@ -313,6 +361,10 @@
                 }
                 
                 & .bio-description {
+                    @media screen and (max-width: 600px) {
+                        margin: 20px;
+                    }
+
                     margin: 30px 50px 30px 50px;
                     
                     font-size: 18px;
