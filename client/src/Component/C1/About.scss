@@ -31,10 +31,12 @@
 
     @media screen and (max-width: 400px) {
         width: 605px;
+        border: solid 2px rgb(0, 255, 4);
     }
 
     @media screen and (max-width: 360px) {
         width: 665px;
+        border: solid 2px rgb(0, 68, 255);
     }
     
     & .about-card {
