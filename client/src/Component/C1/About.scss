@@ -76,7 +76,7 @@
         border-top-right-radius: 1rem;
         border-top-left-radius: 1rem;
 
-        outline: 2px solid rgb(249, 153, 0);
+        // outline: 2px solid rgb(249, 153, 0);
                 
         & .profile-image {
             width: 160px;
@@ -86,7 +86,7 @@
             z-index: 2;
             position: absolute;
 
-            border: 1px solid black;
+            // border: 1px solid black;
 
             & .bg-image {
                 @media screen and (max-width: 600px) {
@@ -192,7 +192,7 @@
             border-top-right-radius: 0.8rem;
             border-top-left-radius: 0.8rem;
 
-            border: 2px solid rgb(0, 0, 0);
+            // border: 2px solid rgb(0, 0, 0);
 
             & .cover-shadow {
                 @media screen and (max-width: 1150px) {
@@ -218,7 +218,7 @@
                 border-top-right-radius: 0.8rem;
                 border-top-left-radius: 0.8rem;
                 
-                border: 2px solid rgb(71, 145, 255);
+                // border: 2px solid rgb(71, 145, 255);
             }
             
             & img {
@@ -273,12 +273,12 @@
             border-bottom-left-radius: 0.8rem;
             border-bottom-right-radius: 0.8rem;
 
-            border: 2px solid rgb(50, 249, 0);
+            // border: 2px solid rgb(50, 249, 0);
             
             & .bio-holder {
                 height: fit-content;
                 padding: 0;
-                border: 1px solid rgb(199, 0, 249);
+                // border: 1px solid rgb(199, 0, 249);
                 
                 & .bio-name {
                     @media screen and (max-width: 600px) {
@@ -294,7 +294,7 @@
                     font-family: 'Jost', sans-serif;
                     text-shadow: 0 0 10px white;
                     
-                    border: 2px solid rgb(249, 158, 0);
+                    // border: 2px solid rgb(249, 158, 0);
                 }
                 
                 & .bio-info {
@@ -305,7 +305,7 @@
                     justify-content: space-between;
                     align-items: center;
 
-                    border: 1px solid rgb(0, 157, 255);
+                    // border: 1px solid rgb(0, 157, 255);
                     
                     @media screen and (max-width: 600px) {
                         display: flex;
@@ -326,7 +326,7 @@
                         word-spacing: 2px;
                         font-family: 'Karla', sans-serif;
                         
-                        border: 1px solid rgb(249, 0, 0);
+                        // border: 1px solid rgb(249, 0, 0);
                     }
                     
                     & .bio-tags {
@@ -340,7 +340,7 @@
                         justify-content: flex-end;
                         align-items: center;
                         
-                        border: 1px solid rgb(0, 0, 0);
+                        // border: 1px solid rgb(0, 0, 0);
                         
                         & .tag {
                             margin: 0 10px 0 10px;
