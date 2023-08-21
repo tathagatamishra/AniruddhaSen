@@ -4,21 +4,22 @@
   height: 100vh;
   box-sizing: border-box;
   // position: relative;
-  
+
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  
+
   // background: rgb(148, 148, 148);
 
   & .webBody {
     height: fit-content;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    
+
     // border: 2px rgb(2, 255, 56) solid;
   }
 }
