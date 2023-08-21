@@ -23,11 +23,11 @@ function App() {
     <DarkModeProvider>
       <div className="App">
 
-        <Header />
+        {/* <Header /> */}
 
         <div className="webBody">
           <About />
-          <Resume />
+          {/* <Resume />
           <Skill />
           <Interest />
           <Publication />
@@ -37,10 +37,10 @@ function App() {
           <Blog />
           <Social />
           <Contact />
-          <Resource />
+          <Resource /> */}
         </div>
 
-        <Footer />
+        {/* <Footer /> */}
 
       </div>
     </DarkModeProvider>
