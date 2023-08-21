@@ -23,7 +23,7 @@ function App() {
     <DarkModeProvider>
       <div className="App">
 
-        {/* <Header /> */}
+        <Header />
 
         <div className="webBody">
           <About />

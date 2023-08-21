@@ -8,17 +8,13 @@
     height: fit-content;
     outline: none;
     box-sizing: border-box;
-    border: solid 2px red;
+    // border: solid 2px red;
     margin: auto;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
+    align-items: flex-end;
 
 
     transition: 300ms;
@@ -30,25 +26,25 @@
         width: 950px;
     }
     @media screen and (max-width: 910px) {
-        width: 1050px;
+        width: 900px;
     }
     @media screen and (max-width: 700px) {
-        width: 1050px;
+        width: 690px;
     }
 
     @media screen and (max-width: 600px) {
         width: 495px;
-        border: solid 2px rgb(151, 255, 72);
+        // border: solid 2px rgb(151, 255, 72);
     }
 
     @media screen and (max-width: 400px) {
-        width: 400px;
-        border: solid 2px rgb(255, 124, 246);
+        width: 390px;
+        // border: solid 2px rgb(255, 124, 246);
     }
 
     @media screen and (max-width: 360px) {
-        width: 400px;
-        border: solid 2px rgb(0, 68, 255);
+        width: 360px;
+        // border: solid 2px rgb(0, 68, 255);
     }
     
     & .about-card {
@@ -72,8 +68,8 @@
         }
         @media screen and (max-width: 400px) {
             padding: 0;
-            width: 390px;
-            height: 650px;
+            width: 370px;
+            height: 665px;
             margin: 20px 10px 20px 10px;
         }
 
@@ -96,7 +92,7 @@
         border-top-right-radius: 1rem;
         border-top-left-radius: 1rem;
 
-        outline: 2px solid rgb(249, 153, 0);
+        // outline: 2px solid rgb(249, 153, 0);
                 
         & .profile-image {
             width: 160px;
@@ -133,6 +129,7 @@
                 top: 100%;
                 left: 0%;
                 transform: translate(-50%, -50%);
+                
                 
                 object-fit: cover;
                 border-radius: 49.9%;
@@ -246,7 +243,7 @@
                     height: 200px;
                 }
                 @media screen and (max-width: 400px) {
-                    width: 390px;
+                    width: 370px;
                     height: 200px;
                 }
 
@@ -302,8 +299,8 @@
                 margin-top: 150px;
             }
             @media screen and (max-width: 400px) {
-                width: 390px;
-                height:500px;
+                width: 370px;
+                height: 515px;
                 margin-top: 150px;
             }
 
@@ -315,12 +312,12 @@
 
             z-index: 1;
             position: absolute;
-            
+
             background: linear-gradient(0deg, white 70%, transparent 100%);
             border-bottom-left-radius: 0.8rem;
             border-bottom-right-radius: 0.8rem;
 
-            border: 2px solid rgb(50, 249, 0);
+            // border: 2px solid rgb(50, 249, 0);
             
             & .bio-holder {
                 height: fit-content;
@@ -334,7 +331,7 @@
                         padding-right: 10px;
                     }
                     @media screen and (max-width: 400px) {
-                        font-size: 30px;
+                        font-size: 28px;
                         text-align: right;
                         padding-right: 10px;
                     }
@@ -357,7 +354,7 @@
                     justify-content: space-between;
                     align-items: center;
 
-                    border: 1px solid rgb(0, 157, 255);
+                    // border: 1px solid rgb(0, 157, 255);
                     
                     @media screen and (max-width: 600px) {
                         display: flex;
@@ -390,13 +387,12 @@
                         word-spacing: 2px;
                         font-family: 'Karla', sans-serif;
                         
-                        border: 1px solid rgb(249, 0, 0);
+                        // border: 1px solid rgb(249, 0, 0);
                     }
                     
                     & .bio-tags {
                         @media screen and (max-width: 600px) {
                             margin: 10px;
-                            // margin-top: 50px;
                         }
 
                         margin-right: 40px;
@@ -405,9 +401,13 @@
                         justify-content: flex-end;
                         align-items: center;
                         
-                        border: 1px solid rgb(0, 0, 0);
+                        // border: 1px solid rgb(0, 0, 0);
                         
                         & .tag {
+                            @media screen and (max-width: 400px) {
+                                margin: 0 5px 0 5px;
+                            }
+
                             margin: 0 10px 0 10px;
                             padding: 4px 6px 4px 6px;
 
@@ -429,7 +429,15 @@
                     @media screen and (max-width: 600px) {
                         margin: 20px;
                     }
+                    @media screen and (max-width: 400px) {
+                        text-align: left;
+                    }
 
+                    &::first-letter {
+                        font-size: 25px;
+                        color: #100947;
+                    }
+                    
                     margin: 30px 50px 30px 50px;
                     
                     font-size: 18px;
@@ -438,7 +446,7 @@
                     text-align: justify;
                     font-family: 'Karla', sans-serif;
                     
-                    border: 1px solid rgb(228, 0, 249);
+                    // border: 1px solid rgb(228, 0, 249);
                 }
             }
         }
@@ -452,6 +460,11 @@
     box-sizing: border-box;
     color: $---text-dark-color;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     transition: 300ms;
     
     @media screen and (max-width: 1150px) {
@@ -459,6 +472,27 @@
     }
     @media screen and (max-width: 1030px) {
         width: 950px;
+    }
+    @media screen and (max-width: 910px) {
+        width: 900px;
+    }
+    @media screen and (max-width: 700px) {
+        width: 690px;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 495px;
+        // border: solid 2px rgb(151, 255, 72);
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 390px;
+        // border: solid 2px rgb(255, 124, 246);
+    }
+
+    @media screen and (max-width: 360px) {
+        width: 360px;
+        // border: solid 2px rgb(0, 68, 255);
     }
     
     & .about-card {
@@ -473,6 +507,18 @@
             width: 800px;
             height: 430px;
             margin: 30px 20px 20px 0;
+        }
+        @media screen and (max-width: 600px) {
+            padding: 0;
+            width: 470px;
+            height: 600px;
+            margin: 20px 10px 20px 10px;
+        }
+        @media screen and (max-width: 400px) {
+            padding: 0;
+            width: 370px;
+            height: 665px;
+            margin: 20px 10px 20px 10px;
         }
 
         transition: 300ms;
@@ -507,6 +553,21 @@
             // border: 1px solid black;
 
             & .bg-image {
+                @media screen and (max-width: 600px) {
+                    width: 165px;
+                    height: 165px;
+                    top: 100%;
+                    left: 0%;
+                    transform: translate(8%, -50%);
+                }
+                @media screen and (max-width: 400px) {
+                    width: 155px;
+                    height: 155px;
+                    top: 100%;
+                    left: 0%;
+                    transform: translate(8%, -50%);
+                }
+
                 width: 175px;
                 height: 175px;
                 margin: 0;
@@ -527,6 +588,15 @@
                 transition: 300ms;
 
                 & .default-image {
+                    @media screen and (max-width: 600px) {
+                        width: 150px;
+                        height: 150px;
+                    }
+                    @media screen and (max-width: 400px) {
+                        width: 130px;
+                        height: 130px;
+                    }
+
                     width: 160px;
                     height: 160px;
                     margin: 0;
@@ -540,6 +610,21 @@
             }
             
             & .user-image {
+                @media screen and (max-width: 600px) {
+                    width: 150px;
+                    height: 150px;
+                    top: 100%;
+                    left: 0%;
+                    transform: translate(14%, -50%);
+                }
+                @media screen and (max-width: 400px) {
+                    width: 140px;
+                    height: 140px;
+                    top: 100%;
+                    left: 0%;
+                    transform: translate(14%, -50%);
+                }
+
                 width: 160px;
                 height: 160px;
                 margin: 0;
@@ -560,18 +645,24 @@
             
             &:hover {
                 & .bg-image {
-                    width: 195px;
-                    height: 195px;
+                    @media screen and (min-width: 600px) {
+                        width: 195px;
+                        height: 195px;
+                    }
 
                     & .default-image {
-                        width: 180px;
-                        height: 180px;
+                        @media screen and (min-width: 600px) {
+                            width: 180px;
+                            height: 180px;
+                        }
                     }
                 }
 
                 & .user-image {
-                    width: 180px;
-                    height: 180px;
+                    @media screen and (min-width: 600px) {
+                        width: 180px;
+                        height: 180px;
+                    }
                 }
             }
         }
@@ -593,6 +684,14 @@
                 }
                 @media screen and (max-width: 1030px) {
                     width: 800px;
+                    height: 200px;
+                }
+                @media screen and (max-width: 600px) {
+                    width: 470px;
+                    height: 200px;
+                }
+                @media screen and (max-width: 400px) {
+                    width: 370px;
                     height: 200px;
                 }
 
@@ -623,9 +722,9 @@
 
             &:hover {
                 & img {
-                    height: 200px;
-                    width: 1000px;
-                    transform: scale(1.1);
+                    @media screen and (min-width: 600px) {
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
@@ -639,6 +738,16 @@
             @media screen and (max-width: 1030px) {
                 height: 270px;
                 width: 800px;
+                margin-top: 150px;
+            }
+            @media screen and (max-width: 600px) {
+                height: 450px;
+                width: 470px;
+                margin-top: 150px;
+            }
+            @media screen and (max-width: 400px) {
+                width: 370px;
+                height: 515px;
                 margin-top: 150px;
             }
 
@@ -662,6 +771,17 @@
                 // border: 1px solid rgb(41, 249, 0);
                 
                 & .bio-name {
+                    @media screen and (max-width: 600px) {
+                        font-size: 40px;
+                        text-align: right;
+                        padding-right: 10px;
+                    }
+                    @media screen and (max-width: 400px) {
+                        font-size: 28px;
+                        text-align: right;
+                        padding-right: 10px;
+                    }
+                    
                     margin: 0 0 0 110px;
                     
                     font-size: 50px;
@@ -682,7 +802,31 @@
 
                     // border: 1px solid rgb(249, 158, 0);
                     
+                    @media screen and (max-width: 600px) {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                    }
+
                     & .bio-topics {
+                        @media screen and (max-width: 600px) {
+                            width: 250px;
+                            height: 60px;
+                            margin: 5px 10px;
+                            
+                            font-size: 16px;
+                            text-align: right;
+                        }
+                        @media screen and (max-width: 400px) {
+                            width: 190px;
+                            height: 60px;
+                            margin: 5px 10px;
+
+                            font-size: 15px;
+                            text-align: right;
+                        }
+
                         margin: 0 0 0 110px;
                         
                         font-size: 18px;
@@ -694,6 +838,10 @@
                     }
                     
                     & .bio-tags {
+                        @media screen and (max-width: 600px) {
+                            margin: 10px;
+                        }
+
                         margin-right: 40px;
                         display: flex;
                         flex-direction: row;
@@ -703,6 +851,10 @@
                         // border: 1px solid rgb(33, 249, 0);
                         
                         & .tag {
+                            @media screen and (max-width: 400px) {
+                                margin: 0 5px 0 5px;
+                            }
+
                             margin: 0 10px 0 10px;
                             padding: 4px 6px 4px 6px;
 
@@ -720,6 +872,18 @@
                 }
                 
                 & .bio-description {
+                    @media screen and (max-width: 600px) {
+                        margin: 20px;
+                    }
+                    @media screen and (max-width: 400px) {
+                        text-align: left;
+                    }
+
+                    &::first-letter {
+                        font-size: 25px;
+                        color: #100947;
+                    }
+
                     margin: 30px 50px 30px 50px;
                     
                     font-size: 18px;
