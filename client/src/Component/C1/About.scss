@@ -30,11 +30,11 @@
     }
 
     @media screen and (max-width: 400px) {
-        width: 1050px;
+        width: 605px;
     }
 
     @media screen and (max-width: 360px) {
-        width: 1050px;
+        width: 665px;
     }
     
     & .about-card {
@@ -305,7 +305,7 @@
                     justify-content: space-between;
                     align-items: center;
 
-                    // border: 1px solid rgb(0, 157, 255);
+                    border: 1px solid rgb(0, 157, 255);
                     
                     @media screen and (max-width: 600px) {
                         display: flex;
@@ -317,6 +317,7 @@
                     & .bio-topics {
                         @media screen and (max-width: 600px) {
                             margin: 5px 10px;
+                            height: 60px;
                         }
 
                         margin: 0 0 0 110px;
@@ -326,12 +327,13 @@
                         word-spacing: 2px;
                         font-family: 'Karla', sans-serif;
                         
-                        // border: 1px solid rgb(249, 0, 0);
+                        border: 1px solid rgb(249, 0, 0);
                     }
                     
                     & .bio-tags {
                         @media screen and (max-width: 600px) {
                             margin: 10px;
+                            // margin-top: 50px;
                         }
 
                         margin-right: 40px;
@@ -340,7 +342,7 @@
                         justify-content: flex-end;
                         align-items: center;
                         
-                        // border: 1px solid rgb(0, 0, 0);
+                        border: 1px solid rgb(0, 0, 0);
                         
                         & .tag {
                             margin: 0 10px 0 10px;
@@ -373,7 +375,7 @@
                     text-align: justify;
                     font-family: 'Karla', sans-serif;
                     
-                    // border: 1px solid rgb(228, 0, 249);
+                    border: 1px solid rgb(228, 0, 249);
                 }
             }
         }
