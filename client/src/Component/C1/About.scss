@@ -101,7 +101,7 @@
             float: left;
             z-index: 2;
             position: absolute;
-
+            transition: 300ms;
             // border: 1px solid black;
 
             & .bg-image {
@@ -226,7 +226,7 @@
 
             border-top-right-radius: 0.8rem;
             border-top-left-radius: 0.8rem;
-
+            transition: 300ms;
             // border: 2px solid rgb(0, 0, 0);
 
             & .cover-shadow {
@@ -323,7 +323,7 @@
                 height: fit-content;
                 padding: 0;
                 // border: 1px solid rgb(199, 0, 249);
-                
+                transition: 300ms;
                 & .bio-name {
                     @media screen and (max-width: 600px) {
                         font-size: 40px;
@@ -335,7 +335,7 @@
                         text-align: right;
                         padding-right: 10px;
                     }
-
+                    transition: 300ms;
                     margin: 0 0 0 110px;
                     
                     font-size: 50px;
@@ -348,7 +348,7 @@
                 
                 & .bio-info {
                     margin-top: 10px;
-
+                    transition: 300ms;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
@@ -380,7 +380,7 @@
                             font-size: 15px;
                             text-align: right;
                         }
-
+                        transition: 300ms;
                         margin: 0 0 0 110px;
                         font-size: 18px;
                         font-weight: 600;
@@ -400,7 +400,7 @@
                         flex-direction: row;
                         justify-content: flex-end;
                         align-items: center;
-                        
+                        transition: 300ms;
                         // border: 1px solid rgb(0, 0, 0);
                         
                         & .tag {
@@ -438,7 +438,7 @@
                     }
                     
                     margin: 30px 50px 30px 50px;
-                    
+                    transition: 300ms;
                     font-size: 18px;
                     text-indent: 50px;
                     word-spacing: 2px;
@@ -548,7 +548,7 @@
             float: left;
             z-index: 2;
             position: absolute;
-
+            transition: 300ms;
             // border: 1px solid black;
 
             & .bg-image {
@@ -636,7 +636,7 @@
                 
                 object-fit: cover;
                 border-radius: 49.9%;
-                
+                transition: 300ms;
                 user-select: none;
                 transition: 300ms;
                 outline: 2px solid $---image-border-color;
@@ -671,7 +671,7 @@
             height: 200px;
             overflow: hidden;
             user-select: none;
-
+            transition: 300ms;
             border-top-right-radius: 0.8rem;
             border-top-left-radius: 0.8rem;
             // border: 2px solid rgb(0, 0, 0);
@@ -768,7 +768,7 @@
                 height: fit-content;
                 padding: 0;
                 // border: 1px solid rgb(41, 249, 0);
-                
+                transition: 300ms;
                 & .bio-name {
                     @media screen and (max-width: 600px) {
                         font-size: 40px;
@@ -782,7 +782,7 @@
                     }
                     
                     margin: 0 0 0 110px;
-                    
+                    transition: 300ms;
                     font-size: 50px;
                     line-height: 1;
                     font-family: 'Jost', sans-serif;
@@ -798,7 +798,7 @@
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: center;
-
+                    transition: 300ms;
                     // border: 1px solid rgb(249, 158, 0);
                     
                     @media screen and (max-width: 600px) {
@@ -827,7 +827,7 @@
                         }
 
                         margin: 0 0 0 110px;
-                        
+                        transition: 300ms;
                         font-size: 18px;
                         font-weight: 600;
                         word-spacing: 2px;
@@ -846,7 +846,7 @@
                         flex-direction: row;
                         justify-content: flex-end;
                         align-items: center;
-                        
+                        transition: 300ms;
                         // border: 1px solid rgb(33, 249, 0);
                         
                         & .tag {
@@ -861,7 +861,7 @@
                             color: rgb(173, 175, 193);
                             font-family: Arial, Helvetica, sans-serif;
                             font-size: 14px;
-
+                            transition: 300ms;
                             border-radius: 5px;
                             border: 1px solid $---button-dark-border-color;
                             background-color: $---button-dark-bg;
@@ -881,7 +881,7 @@
                     &::first-letter {
                         font-size: 25px;
                     }
-
+                    transition: 300ms;
                     margin: 30px 50px 30px 50px;
                     
                     font-size: 18px;

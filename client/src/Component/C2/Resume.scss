@@ -6,9 +6,28 @@
     outline: none;
     box-sizing: border-box;
     // border: solid 2px red;
+    transition: 300ms;
 
     @media screen and (max-width: 1150px) {
         width: 1050px;
+    }
+    @media screen and (max-width: 1030px) {
+        width: 950px;
+    }
+    @media screen and (max-width: 910px) {
+        width: 900px;
+    }
+    @media screen and (max-width: 700px) {
+        width: 690px;
+    }
+    @media screen and (max-width: 600px) {
+        width: 495px;
+    }
+    @media screen and (max-width: 400px) {
+        width: 390px;
+    }
+    @media screen and (max-width: 360px) {
+        width: 360px;
     }
 
     & .resume-card {
