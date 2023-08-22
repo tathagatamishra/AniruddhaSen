@@ -51,7 +51,7 @@
         @media screen and (max-width: 1150px) {
             padding: 0;
             width: 900px;
-            height: 440px;
+            height: 425px;
             margin: 30px 20px 20px 0;
         }
         @media screen and (max-width: 1030px) {
@@ -265,7 +265,7 @@
                 height: 200px;
                 transform: scale(1);
                 width: 100%;
-                transition: 500ms;
+                transition: 300ms;
                 
                 display: block;
                 object-fit: cover;
@@ -284,7 +284,7 @@
 
         & .bio {
             @media screen and (max-width: 1150px) {
-                height: 290px;
+                height: 275px;
                 width: 900px;
                 margin-top: 150px;
             }
@@ -498,7 +498,7 @@
         @media screen and (max-width: 1150px) {
             padding: 0;
             width: 900px;
-            height: 440px;
+            height: 425px;
             margin: 30px 20px 20px 0;
         }
         @media screen and (max-width: 1030px) {
@@ -539,7 +539,7 @@
         border-radius: 0.8rem;
         border-top-right-radius: 0.8rem;
         border-top-left-radius: 0.8rem;
-        // border: 2px solid rgb(249, 153, 0);
+        // outline: 2px solid rgb(249, 153, 0);
                 
         & .profile-image {
             width: 160px;
@@ -711,7 +711,7 @@
                 height: 200px;
                 transform: scale(1);
                 width: 100%;
-                transition: 500ms;
+                transition: 300ms;
                 
                 display: block;
                 object-fit: cover;
@@ -730,7 +730,7 @@
 
         & .bio {
             @media screen and (max-width: 1150px) {
-                height: 290px;
+                height: 275px;
                 width: 900px;
                 margin-top: 150px;
             }
@@ -762,7 +762,7 @@
             background: linear-gradient(0deg, $---card-dark-bg 70%, transparent 100%);
             border-bottom-left-radius: 0.8rem;
             border-bottom-right-radius: 0.8rem;
-            // border: 2px solid rgb(50, 249, 0);
+            // outline: 1px solid rgb(50, 249, 0);
             
             & .bio-holder {
                 height: fit-content;
