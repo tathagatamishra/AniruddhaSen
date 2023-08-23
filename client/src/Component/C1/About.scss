@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 @import '../../assets/variables';
 
-
 .About {
     width: 1150px;
     height: fit-content;
@@ -61,6 +60,7 @@
             margin: 30px 20px 20px 0;
         }
         @media screen and (max-width: 600px) {
+            // float: none;
             padding: 0;
             width: 470px;
             height: 600px;
@@ -145,8 +145,8 @@
                         height: 150px;
                     }
                     @media screen and (max-width: 400px) {
-                        width: 130px;
-                        height: 130px;
+                        width: 140px;
+                        height: 140px;
                     }
 
                     width: 160px;

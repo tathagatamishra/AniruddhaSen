@@ -30,7 +30,10 @@ export default function Resume() {
       <div className="resume-card">
         <div className="cv-lt">
 
-          <div className="cv-text"><div className="dot"></div>Get a copy of my resume</div>
+          <div className="cv-text">
+            <div className="dot"></div>
+            <h1>Get a copy of my resume</h1>
+            </div>
           
           <div className="cv-btn">
             <button onClick={handleView}>View</button>
