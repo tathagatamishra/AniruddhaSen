@@ -41,13 +41,19 @@
             width: 900px;
             padding: 15px;
         }
+        @media screen and (max-width: 600px) {
+            width: 470px;
+            height: 140px;
+            margin: 20px 10px 10px 10px;
+            padding: 0;
+        }
         @media screen and (max-width: 400px) {
             width: 370px;
             height: 150px;
             margin: 20px 10px 20px 10px;
             padding: 0;
         }
-
+        transition: 300ms;
         padding: 30px;
         width: 1000px;
         height: 140px;
@@ -65,29 +71,36 @@
         // border: 2px solid rgb(249, 153, 0);
 
         & .cv-lt {
-            width: 740px;
+            width: 730px;
             height: 100px;
             margin: 0 0 0 10px;
             // border: 2px solid rgb(249, 207, 0);
-
+            transition: 300ms;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
 
             @media screen and (max-width: 1150px) {
-                width: 680px;
+                width: 660px;
+            }
+            @media screen and (max-width: 600px) {
+                flex-direction: column;
+                // height: 110px;
+                width: fit-content;
+                margin: 5px 0 5px 20px;
             }
             @media screen and (max-width: 400px) {
                 flex-direction: column;
+                align-items: flex-start;
                 height: 110px;
-                width: 200px;
+                // width: 200px;
                 margin: 5px 0 5px 20px;
             }
             
             & .cv-text {
-                width: 100%;
-                
+                width: fit-content;
+                transition: 300ms;
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
@@ -96,12 +109,17 @@
                 // border: 1px solid rgb(0, 124, 249);
                 
                 & h1 {
-                    @media screen and (max-width: 400px) {
-                        font-size: 20px;
-                        width: 150px;
+                    @media screen and (max-width: 600px) {
+                        font-size: 21px;
                         margin: 0;
                     }
-
+                    @media screen and (max-width: 400px) {
+                        font-size: 20px;
+                        width: 160px;
+                        margin: 0;
+                    }
+                    
+                    width: fit-content;
                     font-size: 24px;
                     font-weight: 600;
                     word-spacing: 2px;
@@ -110,6 +128,12 @@
                 }
                 
                 & .dot {
+                    @media screen and (max-width: 600px) {
+                        margin-right: 8px;
+                        width: 20px;
+                        height: 20px;
+                        border: 4px solid #575757;
+                    }
                     @media screen and (max-width: 400px) {
                         margin-right: 10px;
                     }
@@ -123,15 +147,25 @@
             }
             
             & .cv-btn {
-                width: 100%;
+                width: fit-content;
                 display: flex;
                 flex-direction: row;
                 // border: 1px solid rgb(249, 0, 199);
+                transition: 300ms;
+                @media screen and (max-width: 400px) {
+                    width: 192px;
+                }
 
                 & button {
                     @media screen and (max-width: 1150px) {
                         height: 45px;
                         width: 140px;
+                    }
+                    @media screen and (max-width: 600px) {
+                        height: 35px;
+                        width: 110px;
+                        font-size: 13px;
+                        margin-bottom: 10px;
                     }
                     @media screen and (max-width: 400px) {
                         height: 35px;
@@ -143,7 +177,7 @@
                         border: 2px solid rgb(78, 78, 78);
                         box-shadow: 4px 4px 0px rgb(78, 78, 78);
                     }
-
+                    transition: 300ms;
                     height: 50px;
                     width: 150px;
                     margin-left: 20px;
@@ -182,6 +216,11 @@
         }
         
         & .cv-rt {
+            @media screen and (max-width: 600px) {
+                width: 135px;
+                height: 165px;
+                margin-right: 15px;
+            }
             @media screen and (max-width: 400px) {
                 width: 120px;
                 height: 145px;
@@ -209,6 +248,9 @@
             transition: 300ms;
             
             & img {
+                @media screen and (max-width: 600px) {
+                    height: 150px;
+                }
                 @media screen and (max-width: 400px) {
                     height: 130px;
                 }
@@ -216,10 +258,11 @@
                 height: 180px;
                 user-select: none;
                 margin: auto;
+                transition: 300ms;
             }
             
             &:hover {
-                @media screen and (min-width: 400px) {
+                @media screen and (min-width: 600px) {
                     transform: rotate(10deg);
                 }
             }
