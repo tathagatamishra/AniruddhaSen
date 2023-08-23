@@ -7,7 +7,7 @@
     box-sizing: border-box;
     // border: solid 2px red;
     transition: 300ms;
-    margin: auto;
+
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -28,6 +28,10 @@
     }
     @media screen and (max-width: 600px) {
         width: 495px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     @media screen and (max-width: 400px) {
         width: 390px;
@@ -279,7 +283,7 @@
     outline: none;
     box-sizing: border-box;
     // border: solid 2px red;
-    margin: auto;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -302,6 +306,10 @@
     }
     @media screen and (max-width: 600px) {
         width: 495px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     @media screen and (max-width: 400px) {
         width: 390px;
