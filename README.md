@@ -1,4 +1,5 @@
-# AniruddhaSen
+<h1>AniruddhaSen<img src="https://github.com/tathagatamishra/AniruddhaSen/assets/114053180/38a14405-944a-4305-bd7a-bdccf73be973" align="right" width="50" height="50"></h1>
+
 Currently, pursuing Master of Science in Medical Biochemistry from All India Institute Of Medical Science, Gorakhpur
 
 
