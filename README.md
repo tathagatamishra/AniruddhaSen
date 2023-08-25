@@ -36,11 +36,12 @@ C11 : Contact: Provide contact information for those interested in reaching out 
 C12 : Resources: Different file formats / Offer downloadable resources, datasets, or tools related to your research.
 
 
-===
+---
 
 | | |
 | :--: | :--: |
 | [![1](https://github.com/tathagatamishra/AniruddhaSen/assets/114053180/a3bb7ce5-c410-4892-a839-c7f71bc4b350)](https://aniruddha-sen.vercel.app/) | [![2](https://github.com/tathagatamishra/AniruddhaSen/assets/114053180/edc5dc65-a50d-4ed3-9f54-71b029ef1756)](https://aniruddha-sen.vercel.app/) |
 | [![3](https://github.com/tathagatamishra/AniruddhaSen/assets/114053180/a9bff149-aa9e-4d53-ae94-22dfd4f1de99)](https://aniruddha-sen.vercel.app/) | [![4](https://github.com/tathagatamishra/AniruddhaSen/assets/114053180/cdae8f4d-1cad-4a1d-b08f-3c5b89685da7)](https://aniruddha-sen.vercel.app/) |
 
+Mouse cursor __
 https://www.cursors-4u.com/
