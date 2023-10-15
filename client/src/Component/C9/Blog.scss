@@ -25,6 +25,19 @@
         @media screen and (max-width: 1150px) {
             width: 900px;
         }
+
+        & .blog-heading {
+            margin: 25px 0 0 40px;
+            // border: 1px solid rgb(255, 0, 0);
+            float: left;
+
+            & h1 {
+                word-spacing: 2px;
+                font-family: 'Karla', sans-serif;
+                line-height: 0;
+                float: left;
+            }
+        }
     }
 }
 .dark-blog {
@@ -53,6 +66,19 @@
 
         @media screen and (max-width: 1150px) {
             width: 900px;
+        }
+
+        & .blog-heading {
+            margin: 25px 0 0 40px;
+            // border: 1px solid rgb(255, 0, 0);
+            float: left;
+
+            & h1 {
+                word-spacing: 2px;
+                font-family: 'Karla', sans-serif;
+                line-height: 0;
+                float: left;
+            }
         }
     }
 }

@@ -19,8 +19,24 @@ import Footer from "./Component/Footer/Footer";
 import Header from "./Component/Header/Header";
 
 import { DarkModeProvider } from "./assets/DarkModeContext";
+import { useEffect, useState } from "react";
 
 function App() {
+  
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <DarkModeProvider>
       <div className="App">
@@ -43,17 +59,19 @@ function App() {
 
         {/* <Footer /> */}
 
-        <div
-          className="scrollTop"
-          onClick={function ScrollToTop() {
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth",
-            });
-          }}
-        >
-          <IonIcon icon={chevronUp} className="label" />
-        </div>
+        {scrollY > 100 && (
+          <div
+            className="scrollTop"
+            onClick={function ScrollToTop() {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
+            <IonIcon icon={chevronUp} className="label" />
+          </div>
+        )}
       </div>
     </DarkModeProvider>
   );

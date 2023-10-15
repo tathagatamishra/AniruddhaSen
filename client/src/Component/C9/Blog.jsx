@@ -8,7 +8,11 @@ export default function Blog() {
 
   return (
     <div className={isDarkMode ? "dark-blog" : "Blog"}>
-        <div className='blog-card'>Blog</div>
+        <div className='blog-card'>
+        <div className="blog-heading">
+          <h1>Blog</h1>
+        </div>
+        </div>
     </div>
   )
 }

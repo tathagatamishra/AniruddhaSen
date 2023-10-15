@@ -8,7 +8,11 @@ export default function Conference() {
 
   return (
     <div className={isDarkMode ? "dark-conference" : "Conference"}>
-      <div className="conference-card">Conference</div>
+      <div className="conference-card">
+      <div className="conference-heading">
+          <h1>Conference</h1>
+        </div>
+      </div>
     </div>
   );
 }

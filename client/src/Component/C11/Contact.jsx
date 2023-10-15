@@ -8,7 +8,11 @@ export default function Contact() {
 
   return (
     <div className={isDarkMode ? "dark-contact" : "Contact"}>
-      <div className="contact-card">Contact</div>
+      <div className="contact-card">
+      <div className="contact-heading">
+          <h1>Contact</h1>
+        </div>
+      </div>
     </div>
   );
 }

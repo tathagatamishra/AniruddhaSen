@@ -12,7 +12,7 @@ export default function Skill() {
     <div className={isDarkMode ? "dark-skill" : "Skill"}>
       <div className="skill-card">
         <div className="skill-heading">
-          <h1>My Expertise Are In . . .</h1>
+          <h1>Expertise</h1>
         </div>
 
         <div className="skill-content">

@@ -8,7 +8,11 @@ export default function Achievement() {
 
   return (
     <div className={isDarkMode ? "dark-achievement" : "Achievement"}>
-      <div className="achievement-card">Achievement</div>
+      <div className="achievement-card">
+      <div className="achievement-heading">
+          <h1>Achievement</h1>
+        </div>
+      </div>
     </div>
   );
 }

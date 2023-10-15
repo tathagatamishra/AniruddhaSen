@@ -8,7 +8,11 @@ export default function Social() {
 
   return (
     <div className={isDarkMode ? "dark-social" : "Social"}>
-      <div className="social-card">Social</div>
+      <div className="social-card">
+      <div className="social-heading">
+          <h1>Social</h1>
+        </div>
+      </div>
     </div>
   );
 }

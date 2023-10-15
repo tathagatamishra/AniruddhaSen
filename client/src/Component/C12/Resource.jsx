@@ -8,7 +8,11 @@ export default function Resource() {
 
   return (
     <div className={isDarkMode ? "dark-resource" : "Resource"}>
-      <div className="resource-card">Resource</div>
+      <div className="resource-card">
+      <div className="resource-heading">
+          <h1>Resource</h1>
+        </div>
+      </div>
     </div>
   );
 }

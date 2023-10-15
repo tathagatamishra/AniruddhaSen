@@ -14,16 +14,135 @@
     & .publication-card {
         padding: 0;
         width: 1000px;
-        height: 300px;
+        height: fit-content;
         margin: 35px 20px 20px 0;
-        
+
         float: right;
         background-color: white;
         box-shadow: $---card-shadow;
         border-radius: 0.8rem;
-    
+
         @media screen and (max-width: 1150px) {
             width: 900px;
+        }
+
+        & .publication-heading {
+            margin: 25px 0 0 40px;
+            // border: 1px solid rgb(255, 0, 0);
+            float: left;
+
+            & h1 {
+                word-spacing: 2px;
+                font-family: 'Karla', sans-serif;
+                line-height: 0;
+                float: left;
+            }
+        }
+
+        & .publication-content {
+            width: 100%;
+            height: fit-content;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            // border: 2px solid rgb(115, 0, 255);
+
+            & .publication-image {
+                width: 260px;
+                height: 204px;
+
+                z-index: 1;
+                object-fit: cover;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                border-radius: 20px;
+                background-color: white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+                // border: 1px solid rgb(21, 249, 0);
+
+                transform: translate(-30%, 0%) rotate(-5deg);
+                transition: 300ms;
+
+                & img {
+                    height: 180px;
+                    user-select: none;
+                    // margin: auto;
+                }
+            }
+
+            & .publication-data {
+                width: fit-content;
+                height: 580px;
+                margin-top: 10px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: stretch;
+
+                // border: 1px solid rgb(51, 255, 0);
+
+
+                & .publication-list {
+                    width: 100%;
+                    padding-right: 40px;
+                    overflow-y: scroll;
+                    z-index: 1;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: stretch;
+
+                    & .list-item {
+                        // border: 1px solid red;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        border-bottom: 1px dotted gray;
+
+                        word-spacing: 2px;
+                        text-align: left;
+                        font-family: 'Karla', sans-serif;
+
+                        & a {
+                            color: rgb(0, 132, 255);
+                            text-decoration: none;
+                        }
+                    }
+
+                    &::-webkit-scrollbar {
+                        width: 6px;
+                        background: none;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        background: rgb(236, 237, 255);
+                    }
+                }
+
+                & .pub-top {
+                    z-index: 2;
+                    width: 680px;
+                    height: 80px;
+                    box-shadow: inset 0px 160px 20px -145px white;
+                    position: absolute;
+                }
+
+                & .pub-bottom {
+                    z-index: 2;
+                    width: 680px;
+                    height: 90px;
+                    box-shadow: inset 0px -160px 20px -145px white;
+                    transform: translateY(-34px);
+                }
+            }
         }
     }
 }
@@ -33,7 +152,7 @@
     height: fit-content;
     outline: none;
     box-sizing: border-box;
-    color: rgb(236,236,241);
+    color: rgb(236, 236, 241);
     // border: solid 2px red;
 
     @media screen and (max-width: 1150px) {
@@ -43,17 +162,137 @@
     & .publication-card {
         padding: 0;
         width: 1000px;
-        height: 300px;
+        height: fit-content;
         margin: 35px 20px 20px 0;
-        
+
         float: right;
         background-color: $---card-dark-bg;
         box-shadow: $---card-shadow;
         border-radius: 0.8rem;
         outline: $---card-dark-outline;
-    
+
         @media screen and (max-width: 1150px) {
             width: 900px;
+        }
+
+        & .publication-heading {
+            margin: 25px 0 0 40px;
+            // border: 1px solid rgb(255, 0, 0);
+            float: left;
+
+            & h1 {
+                word-spacing: 2px;
+                font-family: 'Karla', sans-serif;
+                line-height: 0;
+                float: left;
+            }
+        }
+
+        & .publication-content {
+            width: 100%;
+            height: fit-content;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            // border: 2px solid rgb(115, 0, 255);
+
+            & .publication-image {
+                width: 260px;
+                height: 204px;
+
+                z-index: 1;
+                object-fit: cover;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                border-radius: 20px;
+                background-color: $---image-border-color;
+                box-shadow: $---card-dark-shadow;
+                outline: 1px solid black;
+                // border: 1px solid rgb(21, 249, 0);
+
+                transform: translate(-30%, 0%) rotate(-5deg);
+                transition: 300ms;
+
+                & img {
+                    height: 180px;
+                    user-select: none;
+                    // margin: auto;
+                }
+            }
+
+            & .publication-data {
+                width: fit-content;
+                height: 580px;
+                margin-top: 10px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: stretch;
+
+                // border: 1px solid rgb(51, 255, 0);
+
+
+                & .publication-list {
+                    width: 100%;
+                    padding-right: 40px;
+                    overflow-y: scroll;
+                    z-index: 1;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: stretch;
+
+                    & .list-item {
+                        // border: 1px solid red;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        border-bottom: 1px dotted gray;
+
+                        word-spacing: 2px;
+                        text-align: left;
+                        font-family: 'Karla', sans-serif;
+
+                        & a {
+                            color: rgb(90, 175, 255);
+                            text-decoration: none;
+                        }
+                    }
+
+                    &::-webkit-scrollbar {
+                        width: 6px;
+                        background: none;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        background: rgb(52, 53, 63);
+                    }
+                }
+
+                & .pub-top {
+                    z-index: 2;
+                    width: 680px;
+                    height: 80px;
+                    box-shadow: inset 0px 160px 20px -145px $---card-dark-bg;
+                    position: absolute;
+                }
+
+                & .pub-bottom {
+                    z-index: 2;
+                    width: 680px;
+                    height: 90px;
+                    box-shadow: inset 0px -160px 20px -145px $---card-dark-bg;
+                    transform: translateY(-34px);
+                }
+            }
         }
     }
 }
