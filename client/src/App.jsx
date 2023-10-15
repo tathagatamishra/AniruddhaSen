@@ -1,5 +1,8 @@
 import "./App.scss";
 
+import { IonIcon } from "@ionic/react";
+import { chevronUp } from "ionicons/icons";
+
 import About from "./Component/C1/About";
 import Social from "./Component/C10/Social";
 import Contact from "./Component/C11/Contact";
@@ -15,14 +18,12 @@ import Blog from "./Component/C9/Blog";
 import Footer from "./Component/Footer/Footer";
 import Header from "./Component/Header/Header";
 
-import { DarkModeProvider } from './assets/DarkModeContext';
-
+import { DarkModeProvider } from "./assets/DarkModeContext";
 
 function App() {
   return (
     <DarkModeProvider>
       <div className="App">
-
         <Header />
 
         <div className="webBody">
@@ -42,6 +43,17 @@ function App() {
 
         {/* <Footer /> */}
 
+        <div
+          className="scrollTop"
+          onClick={function ScrollToTop() {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }}
+        >
+          <IonIcon icon={chevronUp} className="label" />
+        </div>
       </div>
     </DarkModeProvider>
   );

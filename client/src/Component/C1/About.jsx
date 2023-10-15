@@ -14,6 +14,13 @@ export default function About() {
 
   const { isDarkMode } = useDarkMode();
 
+  const dummyData = {
+    name: 'Unknown User'
+  }
+  const data = {
+    name: 'Aniruddha Sen'
+  }
+
   return (
     <div className={isDarkMode ? 'dark-about' : 'About'}>
 
@@ -21,7 +28,7 @@ export default function About() {
 
         <div className="profile-image">
 
-          <img className="user-image" src={profileImage} />
+          {/* <img className="user-image" src={profileImage} /> */}
 
           <div className="bg-image">
             <img className="default-image" src={defaultProfile} />
@@ -35,7 +42,7 @@ export default function About() {
 
         <div className="bio">
           <div className="bio-holder">
-            <h1 className="bio-name">Aniruddha Sen</h1>
+            <h1 className="bio-name">{dummyData.name}</h1>
 
             <div className="bio-info">
               <p className="bio-topics">Bioinformatics Specialist</p>
